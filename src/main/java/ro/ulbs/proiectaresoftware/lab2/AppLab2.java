@@ -1,8 +1,7 @@
 package ro.ulbs.proiectaresoftware.lab2;
-import java.sql.SQLOutput;
 import java.util.*;
 
-public class Main {
+public class AppLab2 {
     public static void main(String[] args) {
         List<Integer> x = new ArrayList();
         List<Integer> y = new ArrayList();

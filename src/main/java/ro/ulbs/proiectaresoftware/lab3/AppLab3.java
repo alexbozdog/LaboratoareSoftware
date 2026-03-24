@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class AppLab3 {
     public static void main(String[] args) {
         Path path = Paths.get("in.txt");
         Path pathOut = Paths.get("out.txt");

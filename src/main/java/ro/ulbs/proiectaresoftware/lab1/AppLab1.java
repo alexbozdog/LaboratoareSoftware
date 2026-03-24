@@ -2,7 +2,7 @@ package ro.ulbs.proiectaresoftware.lab1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Application {
+public class AppLab1 {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
         for (char i = 'a'; i <= 'z'; i++) {
