@@ -34,6 +34,11 @@ public class AppLab8 {
 
             XSSFSheet sheet = wb.getSheetAt(0);
             for (Row row : sheet) {
+                if (row.getRowNum() == 0) {
+                    row.createCell(6).setCellValue("Medie");
+                    continue;
+                }
+
                 double v1 = row.getCell(3).getNumericCellValue();
                 double v2 = row.getCell(4).getNumericCellValue();
                 double v3 = row.getCell(5).getNumericCellValue();
@@ -54,6 +59,11 @@ public class AppLab8 {
 
             XSSFSheet sheet = wb.getSheetAt(0);
             for (Row row : sheet) {
+                if (row.getRowNum() == 0) {
+                    row.createCell(6).setCellValue("Medie Formula");
+                    continue;
+                }
+
                 int rNum = row.getRowNum() + 1;
                 row.createCell(6).setCellFormula("AVERAGE(D" + rNum + ":F" + rNum + ")");
             }
